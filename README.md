@@ -81,6 +81,8 @@ lib/
 
 ## Liên Hệ
 
-Tên của bạn - Chảo Láo Lở
-Gmail - chaolaolo290604@gmail.com
+Họ và Tên: Chảo Láo Lở
+
+Email: chaolaolo290604@gmail.com
+
 Link dự án: [https://github.com/chaolaolo/ecommerce_ui_app](https://github.com/chaolaolo/ecommerce_ui_app)
