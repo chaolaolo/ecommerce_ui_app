@@ -39,6 +39,8 @@ class ProductTile extends StatelessWidget {
               style: TextStyle(
                 color: Colors.grey[600],
               ),
+              maxLines: 4,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
 
@@ -49,21 +51,25 @@ class ProductTile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      product.name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+                Flexible(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        product.name,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                       ),
-                    ),
-                    Text(
-                      "\$" + product.price.toString(),
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
+                      Text(
+                        "VND " + product.price.toString(),
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                    ],
+                  ),
                 ),
 
                 //btn add to cart
